@@ -1,15 +1,40 @@
 body {
    font-family: 'Roboto', sans-serif;
 }
-
-.container-wrapper {
-
-}
+/* Containers */
 
 .container-wrapper--red {
     background-color: #f05f40;
     color: white;
 }
+.callout-container {
+    height: 100vh;
+    background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+/* Alerts */
+
 .alert-container .col-12 {
     padding-left: 0;
     padding-right: 0;
@@ -23,39 +48,6 @@ body {
     border-color: #eec802;
 }
 
-.callout-container {
-    height: 100vh;
-    background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-
-}
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.quotes-container {
-
-}
-
-.features-container {
-
-}
-
 /* Page Headers */
 
 .page-header {
@@ -67,7 +59,12 @@ body {
     margin-top: 0;
 }
 
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
 /* Block dividers*/
+
 .block-divider {
     width: 75px;
     height: 5px;
@@ -79,7 +76,6 @@ body {
     background-color: #f05f40;
 }
 
-
 .block-divider--white {
     background-color: white;
 }
@@ -88,14 +84,8 @@ body {
     width: 35px;
 }
 
-/*  content Container */
-
-.content-container {
-    padding-top: 75px;
-    padding-bottom: 75px;
-}
-
 /* Navigation */
+
 .navalert-container {
     position: absolute;
     top: 0;
@@ -122,7 +112,9 @@ body {
 .navbar .navbar-nav a {
     font-weight: bold;
 }
+
 /* Jumbotron */
+
 .jumbotron {
     background-color: transparent;
 }
@@ -166,6 +158,8 @@ body {
     background-color: #df4929;
     border-color: #df4929;
 }
+
+/* Features */
 
 .features-section {
     text-align: center;
